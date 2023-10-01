@@ -1,0 +1,17 @@
+﻿@model First.Models.Calculator
+@{
+    ViewData["Title"] = "Kalkulator";
+}
+
+<h1>Urodzinowy Fromularzyk!!! :D</h1>
+<form action="Calculator">
+    <input type="number" asp-for="Number1"/>
+    <input type="number" asp-for="Number2" />
+    Dodaj<input type="radio" value="Dodaj" asp-for="Operation"/>
+    Odejmij<input type="radio" value="Odejmij" asp-for="Operation" />
+    Pomnoz<input type="radio" value="Pomnoz" asp-for="Operation" />
+    Podziel<input type="radio" value="Podziel" asp-for="Operation" />
+    <input type="Submit"/>
+</form>
+
+@ViewBag.wynik

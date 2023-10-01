@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<p>This is about Page</p>
+
+@ViewBag.Name @ViewBag.powitanie
+
+@foreach(Dane d in Model){
+    <p>@d.Name @d.Surrname</p>
+}
